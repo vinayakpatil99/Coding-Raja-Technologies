@@ -1,19 +1,139 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizeing: border-box;
+}
+
 /*body{
-    background-color: red;
-}*/
-cv-form{
-    /*display:none;*/
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
-#cv-template{
-    display: none;
-}
-
-.myimg{
-   /* border: 1px solid red;*/
-   border-radius: 50px;
-    width:200px;
+*/
+.main{
+    background-color: #fff;
+    padding: lem;
+    padding-bottom: 1.1cm;
+    border-radius: 1cm;
+    margin: 1cm;
 }
 
-.background{
-    background-color:aquamarine;
+.loader{
+    display: flex;
+    flex-direction: row;
+    height: 4cm;
+    padding: 0 1cm;
+    transform: rotate(180deg);
+    justify-content: right;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+.current_playing{
+    display: flex;
+    margin: 1cm;
+
+}
+
+.loader:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+    .spotify{
+        width: 50px;
+        height: 50px;
+        margin-right: 0.6cm;
+    }
+}
+
+.spotify img{
+    height: 100px;
+    width: 100px;
+}
+
+.current_playing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading{
+    color: #000;
+    font-size: 1.1cm;
+    font-weight: bold;
+    align-self: center;
+}
+.loading{
+    display: flex;
+    margin-top: 1cm;
+    margin-left: .3cm;
+
+}
+
+.load:nth-child(1){
+    animation: delay 0.2s;
+}
+
+.load:nth-child(2){
+    animation: delay 0.4s;
+}
+
+.load:nth-child(3){
+    animation: delay 0.6s;
+}
+.play{
+    position: relative;
+    left: 0.35cm;
+    height: 1.6cm;
+    width: 1.6cm;
+    clip-path: polygon(50% 50%, 100% 50% ,75% 6.6%);
+    background-color: #000;
+    transform: rotate(-90deg);
+    align-self: center;
+    margin-top: 0.7em;
+    justify-self:center;
+}
+
+.album_cover{
+    position: relative;
+    margin-right: 1cm;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 232, 232);
+    align-self:center;
+    border-radius: 5px;
+}
+.song{
+    position: relative;
+    transform: rotate(180deg);
+    margin-right: 1cm;
+    color: #000;
+    align-self: center;
+
+}
+.artist{
+    font-size: .6cm;
+
+}
+
+.load{
+    width: 2px;
+    height: 33px;
+    background-color: limegreen;
+    animation:1s move6 infinite;
+    border-radius: 5px;
+    margin: 0.1cm;
+}
+@keyframes move6{
+    0%{
+        height: 0.2cm;
+    }
+    25%{
+        height: 0.7cm;
+    }
+    50%{
+        height: 1.5cm;
+    }
+    100%{
+        height: 0.2cm;
+    }
 }
